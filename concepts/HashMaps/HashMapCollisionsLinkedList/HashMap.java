@@ -1,4 +1,9 @@
-class HashMap {
+/**
+* HashMap Class
+* @author Christoph Schild
+* 
+*/
+public class HashMap {
 
     public int count = 0;
     private int size = 0;
@@ -11,6 +16,9 @@ class HashMap {
             map[i] = new LinkedList(isSet);
         }
     }
+    /**
+    * Debug method that displays entire HashMap
+    */
     public void debug() {
         System.out.println("----------------\nSize: " + size + ", Count: " + count + "");
         for(int i = 0; i < map.length; i++) {
@@ -25,17 +33,35 @@ class HashMap {
         }
         System.out.println("");
     }
+    /**
+    * Adds new data to hashmap
+    * @param data new data to be added to HashMap
+    */
     public void push(String data) {
         int hash = hash(data);
         if(map[hash].push(data)) count++;
 
     }
+    /**
+    * Removes element from HashMap
+    * @param data new data to be removed from HashMap
+    */
     public void remove(String data) {
         
     }
-    public void get(String data) {
+    /**
+    * Retrieves data from HashMap
+    * @param data new data to be searched for
+    * @return element searched for
+    */
+    public String get(String data) {
         
     }
+    /**
+    * Performs hash operation to determine where new data should be added
+    * @param value value to be hashed
+    * @return hash integer
+    */
     private int hash(String value) {
         int charSum = 0;
         for(char thisChar : value.toCharArray()) {
@@ -43,6 +69,9 @@ class HashMap {
         }
         return charSum % size;
     }
+    /**
+    * Resizes HashMap to accomodate new size
+    */
     public void resize() {
         
     }

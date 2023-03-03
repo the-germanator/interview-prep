@@ -1,4 +1,14 @@
-class Main {
+/**
+* Main Class contains the driver coce for example code
+* @author Christoph Schild
+* 
+*/
+
+public class Main {
+    /**
+    * Main entry point to the HashMap/HashSet example code
+    * @param args Standard command line arguments
+    */
     public static void main(String[] args) {
         HashMap test = new HashMap(4, false);
         test.push("Gilfoyle");
