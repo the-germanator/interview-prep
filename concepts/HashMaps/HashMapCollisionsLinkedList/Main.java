@@ -11,18 +11,31 @@ public class Main {
     */
     public static void main(String[] args) {
         HashMap test = new HashMap(4, false);
-        test.push("Gilfoyle");
-        test.push("Dinesh");
-        test.push("Richard");
-        test.push("Monica");
-        test.push("Lori");
-        test.push("Big Head");
-        test.push("Erlich");
-        test.push("Gavin");
-        test.push("Jin Yang");
-        test.push("Peter");
-        
-        
+        test.add("Gilfoyle");
+        test.add("Dinesh");
+        test.add("Richard");
+        test.add("Monica");
+        test.add("Lori");
+        test.add("Big Head");
+        test.add("Erlich");
+        test.add("Gavin");
+        test.add("Jin Yang");
+        test.add("Peter");
+        test.debug();
+
+       
+        test.remove("Dinesh");
+         test.remove("Erlich");
+        test.remove("Richard");
+        test.remove("Monica");
+        test.remove("Peter");
+        test.remove("Lori");
+        test.remove("Big Head");
+        test.remove("Gavin");
+        test.remove("Jin Yang");
+        test.remove("Gilfoyle");
+
+
         test.debug();
     }
 

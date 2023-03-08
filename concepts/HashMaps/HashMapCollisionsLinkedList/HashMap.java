@@ -37,9 +37,9 @@ public class HashMap {
     * Adds new data to hashmap
     * @param data new data to be added to HashMap
     */
-    public void push(String data) {
+    public void add(String data) {
         int hash = hash(data);
-        if(map[hash].push(data)) count++;
+        if(map[hash].add(data)) count++;
 
     }
     /**
@@ -47,7 +47,9 @@ public class HashMap {
     * @param data new data to be removed from HashMap
     */
     public void remove(String data) {
-        
+        int hash = hash(data);
+        map[hash].remove(data);
+        count--;
     }
     /**
     * Retrieves data from HashMap
@@ -55,7 +57,7 @@ public class HashMap {
     * @return element searched for
     */
     public String get(String data) {
-        
+        return "";
     }
     /**
     * Performs hash operation to determine where new data should be added
